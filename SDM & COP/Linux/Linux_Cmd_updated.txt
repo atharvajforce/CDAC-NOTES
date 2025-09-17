@@ -1,0 +1,73 @@
+Basic Linux Commands
+1)pwd
+  Shows the current directory (where you are)
+
+2)ls
+  Lists all files and folders in the current location
+
+3)mkdir name
+  Creates a new directory(folder)
+  Ex: mkdir mayuresh
+
+4)rmdir name
+  Deletes  directory
+
+5)whoami
+  Shows the current username
+
+6)cd folder_name
+  Move into a directory
+Ex: cd mayuresh -> opens the mayuresh folder/directory
+
+7)date
+  Shows current date and time
+Ex: Thu Sep 4 11:08:54 PDT 2025
+
+8)date +%D
+  Shows the date only -> 09/04/25
+
+9)date +%T
+ Shows the time only
+
+10)date +%H:%M
+ Shows time in hour:minutes format(11:15)
+
+11)cd ..
+  Go back to the previous (parent) directory
+
+12)ls -lt
+  Lists files/folders with details sorted by time(latest first)
+
+Ex:
+
+text
+drwxr-xr-x 1 ietuser ietuser 512 Sep  4 11:18 demo1
+drwxr-xr-x 1 ietuser ietuser 512 Sep  4 11:18 demo
+drwxr-xr-x 1 ietuser ietuser 512 Sep  4 11:05 mayuresh
+drwxr-xr-x 1 ietuser ietuser 512 Sep  4 11:03 powar
+
+13)ls -ltr
+  Lists files/folders with details sorted in reverse order(oldest first)
+
+14)touch filename
+  Creates a new empty file
+Ex: touch abc.txt
+
+15)nano filename
+ Opens file in editor to write/edit
+Ex: nano abc.txt
+
+16)cat filename
+  Displays the content of a file
+Ex: cat abc.txt
+
+17)mv filename destination/
+ Moves a file into another folder(also used to rename)
+Ex: mv abc.txt mayuresh -> moves abc.txt into mayuresh folder/directory
+
+18)cp filename destination/
+ Copies a file to another location
+Ex: cp abc.txt /home/ietuser/ -> copies abc.txt into /home/ietuser/
+
+19)
+
