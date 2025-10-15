@@ -54,6 +54,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		List<Employee> temp= elist.stream()
 		                    .filter(emp->emp.getEname().equals(nm))
 		                    .collect(Collectors.toList());
+	
 		
 		if(temp.size()>0) {
 			return temp;
@@ -110,7 +111,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return lst;
 	}
 	
-	@Override
+	
 	@Override
 	public List<Employee> sortById() {
 		List<Employee> lst=new ArrayList<>();

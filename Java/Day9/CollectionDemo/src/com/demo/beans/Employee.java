@@ -81,7 +81,7 @@ public class Employee implements Comparable<Employee> {
 		else
 			return 1;*/
 		
-		return (int)(this.sal-ob.sal);
+		return (int)(this.sal-ob.sal);  // efficient method            
 			
 	}
    
