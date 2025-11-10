@@ -11,6 +11,7 @@ public class MyHashTable {
 		};
 		
 	}
+	
 	public MyHashTable() {
 		heads=new Node[10];
 		for(int i=0;i<heads.length;i++) {
@@ -62,6 +63,33 @@ public class MyHashTable {
 		}
 		System.out.println(num + " not found in  bucket "+pos);
 		return false;
+	}
+	
+	public int deleteData(int num) {
+		
+	  int pos=num%heads.length;
+	  Node temp=heads[pos];
+	  Node prev = null;
+	  
+	  while(temp!=null) {
+			if(temp.data==num) {
+				
+				if(prev == null) {
+					heads[pos]=temp.next;
+				}else {
+					prev.next = temp.next;
+				}
+				
+				System.out.println(num+" Deleted Succesfully");
+				return num;
+			}
+			prev=temp;
+			temp = temp.next;
+				
+		}
+			System.out.println(num + " not found in  bucket "+pos);
+			return -1;
+			
 	}
 	
 	
